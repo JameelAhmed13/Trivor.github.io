@@ -15,31 +15,30 @@
     content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
   <meta name="author" content="PIXINVENT">
   <title>TRIVOR</title>
-  <link rel="apple-touch-icon" href="../app-assets/images/ico/apple-icon-120.html">
-  <link rel="shortcut icon" type="image/x-icon"
-    href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/app-assets/images/ico/favicon.ico">
+      <link rel="apple-touch-icon" href="/app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/app-assets/images/ico/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600"
     rel="stylesheet">
 
   <!-- BEGIN: Vendor CSS-->
-  <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
-  <link rel="stylesheet" type="text/css" href="../app-assets/fonts/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/extensions/jstree.min.css">
+  <link rel="stylesheet" type="text/css" href="/app-assets/vendors/css/vendors.min.css">
+  <link rel="stylesheet" type="text/css" href="/app-assets/fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/app-assets/vendors/css/extensions/jstree.min.css">
   <!-- END: Vendor CSS-->
 
   <!-- BEGIN: Theme CSS-->
-  <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap-extended.min.css">
-  <link rel="stylesheet" type="text/css" href="../app-assets/css/colors.min.css">
-  <link rel="stylesheet" type="text/css" href="../app-assets/css/components.min.css">
-  <link rel="stylesheet" type="text/css" href="../app-assets/css/themes/dark-layout.min.css">
-  <link rel="stylesheet" type="text/css" href="../app-assets/css/themes/bordered-layout.min.css">
-  <link rel="stylesheet" type="text/css" href="../app-assets/css/themes/semi-dark-layout.min.css">
+  <link rel="stylesheet" type="text/css" href="/app-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/app-assets/css/bootstrap-extended.min.css">
+  <link rel="stylesheet" type="text/css" href="/app-assets/css/colors.min.css">
+  <link rel="stylesheet" type="text/css" href="/app-assets/css/components.min.css">
+  <link rel="stylesheet" type="text/css" href="/app-assets/css/themes/dark-layout.min.css">
+  <link rel="stylesheet" type="text/css" href="/app-assets/css/themes/bordered-layout.min.css">
+  <link rel="stylesheet" type="text/css" href="/app-assets/css/themes/semi-dark-layout.min.css">
 
   <!-- BEGIN: Page CSS-->
-  <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/horizontal-menu.min.css">
-  <link rel="stylesheet" type="text/css" href="../app-assets/css/plugins/extensions/ext-component-tree.min.css">
-  <link rel="stylesheet" type="text/css" href="../app-assets/css/pages/app-file-manager.min.css">
+  <link rel="stylesheet" type="text/css" href="/app-assets/css/core/menu/menu-types/horizontal-menu.min.css">
+  <link rel="stylesheet" type="text/css" href="/app-assets/css/plugins/extensions/ext-component-tree.min.css">
+  <link rel="stylesheet" type="text/css" href="/app-assets/css/pages/app-file-manager.min.css">
   <!-- END: Page CSS-->
 
   <!-- BEGIN: Custom CSS-->
@@ -601,7 +600,7 @@
     <div class="content-area-wrapper container-xxl p-0">
       <div class="sidebar-left">
         <div class="sidebar">
-          <div class="sidebar-file-manager">
+          <div class="sidebar-file-manager" style="width: 320px;">
             <div class="sidebar-inner">
               <!-- sidebar menu links starts -->
               <!-- add file button -->
@@ -697,10 +696,43 @@
                         <button class="btn btn-primary btn-small me-1" type="submit">Submit</button>
                         <button class="btn btn-danger btn-small" type="cancel">Cancel</button>
                       </div>
+                      
+                      <div class="col-12 my-1 d-flex justify-content-center">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="inlineRadioOptions"
+                            id="inlineRadio1"
+                            value=""
+                            
+                          />
+                          <label class="form-check-label" for="inlineRadio1">AND</label>
+                        </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="inlineRadioOptions"
+                              id="inlineRadio1"
+                              value=""
+                              
+                            />
+                            <label class="form-check-label" for="inlineRadio1">OR</label>
+                          </div>
+                      </div>
+                      <div class="col-12 d-flex justify-content-center">
+                        <button class="btn btn-primary btn-small btn-block mb-1"  type="submit">Advanced System Search...</button>
+                      </div>
+                      
+                      <div class="col-12 d-flex justify-content-center">
+                        <button class="btn btn-warning btn-small btn-block" type="">Advanced Email Search...</button>
+                      </div>
                     </div>
                 </div>
+                
 
-                <div class="list-group list-group-labels">
+                <!-- <div class="list-group list-group-labels">
                   <h6 class="section-label px-2 mb-1">Labels</h6>
                   <a href="#" class="list-group-item list-group-item-action">
                     <i data-feather="file-text" class="me-50 font-medium-3"></i>
@@ -722,7 +754,7 @@
                     <i data-feather="layers" class="me-50 font-medium-3"></i>
                     <span class="align-middle">Archives</span>
                   </a>
-                </div>
+                </div> -->
                 <!-- links for file manager sidebar ends -->
 
 
@@ -1095,7 +1127,7 @@
                         <i data-feather="more-vertical" class="toggle-dropdown mt-n25"></i>
                       </div>
                       <div class="d-flex align-items-center justify-content-center w-100">
-                        <img src="../app-assets/images/icons/jpg.png" alt="file-icon" height="35" />
+                        <img src="/app-assets/images/icons/jpg.png" alt="file-icon" height="35" />
                       </div>
                     </div>
                     <div class="card-body">
@@ -1117,7 +1149,7 @@
                         <i data-feather="more-vertical" class="toggle-dropdown mt-n25"></i>
                       </div>
                       <div class="d-flex align-items-center justify-content-center w-100">
-                        <img src="../app-assets/images/icons/doc.png" alt="file-icon" height="35" />
+                        <img src="/app-assets/images/icons/doc.png" alt="file-icon" height="35" />
                       </div>
                     </div>
                     <div class="card-body">
@@ -1139,7 +1171,7 @@
                         <i data-feather="more-vertical" class="toggle-dropdown mt-n25"></i>
                       </div>
                       <div class="d-flex align-items-center justify-content-center w-100">
-                        <img src="../app-assets/images/icons/txt.png" alt="file-icon" height="35" />
+                        <img src="/app-assets/images/icons/txt.png" alt="file-icon" height="35" />
                       </div>
                     </div>
                     <div class="card-body">
@@ -1161,7 +1193,7 @@
                         <i data-feather="more-vertical" class="toggle-dropdown mt-n25"></i>
                       </div>
                       <div class="d-flex align-items-center justify-content-center w-100">
-                        <img src="../app-assets/images/icons/json.png" alt="file-icon" height="35" />
+                        <img src="/app-assets/images/icons/json.png" alt="file-icon" height="35" />
                       </div>
                     </div>
                     <div class="card-body">
@@ -1215,7 +1247,7 @@
                       <div class="tab-pane fade show active" id="details-tab" role="tabpanel"
                         aria-labelledby="details-tab">
                         <div class="d-flex flex-column justify-content-center align-items-center py-5">
-                          <img src="../app-assets/images/icons/js.png" alt="file-icon" height="64" />
+                          <img src="/app-assets/images/icons/js.png" alt="file-icon" height="64" />
                           <p class="mb-0 mt-1">54kb</p>
                         </div>
                         <h6 class="file-manager-title my-2">Settings</h6>
@@ -1276,7 +1308,7 @@
                         <h6 class="file-manager-title my-2">Today</h6>
                         <div class="d-flex align-items-center mb-2">
                           <div class="avatar avatar-sm me-50">
-                            <img src="../app-assets/images/avatars/5-small.png" alt="avatar" width="28" />
+                            <img src="/app-assets/images/avatars/5-small.png" alt="avatar" width="28" />
                           </div>
                           <div class="more-info">
                             <p class="mb-0">
@@ -1312,7 +1344,7 @@
                         </div>
                         <div class="d-flex align-items-center">
                           <div class="avatar avatar-sm me-50">
-                            <img src="../app-assets/images/portrait/small/avatar-s-1.jpg" alt="Avatar" width="28" />
+                            <img src="/app-assets/images/portrait/small/avatar-s-1.jpg" alt="Avatar" width="28" />
                           </div>
                           <div class="more-info">
                             <p class="mb-0">
@@ -1324,14 +1356,14 @@
                         <h6 class="file-manager-title mt-3 mb-2">3 days ago</h6>
                         <div class="d-flex align-items-start">
                           <div class="avatar avatar-sm me-50">
-                            <img src="../app-assets/images/portrait/small/avatar-s-1.jpg" alt="Avatar" width="28" />
+                            <img src="/app-assets/images/portrait/small/avatar-s-1.jpg" alt="Avatar" width="28" />
                           </div>
                           <div class="more-info">
                             <p class="mb-50">
                               <span class="fw-bold">You</span>
                               uploaded this file
                             </p>
-                            <img src="../app-assets/images/icons/js.png" alt="Avatar" class="me-50" height="24" />
+                            <img src="/app-assets/images/icons/js.png" alt="Avatar" class="me-50" height="24" />
                             <span class="fw-bold">app.js</span>
                           </div>
                         </div>
@@ -1415,7 +1447,7 @@
   <!-- BEGIN: Footer-->
   <footer class="footer footer-static footer-light">
     <p class="clearfix mb-0"><span class="float-md-start d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2021<a
-          class="ms-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">Pixinvent</a><span
+          class="ms-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">HDK</a><span
           class="d-none d-sm-inline-block">, All rights Reserved</span></span><span
         class="float-md-end d-none d-md-block">Hand-crafted & Made with<i data-feather="heart"></i></span></p>
   </footer>
@@ -1424,22 +1456,22 @@
 
 
   <!-- BEGIN: Vendor JS-->
-  <script src="../app-assets/vendors/js/vendors.min.js"></script>
+  <script src="/app-assets/vendors/js/vendors.min.js"></script>
   <!-- BEGIN Vendor JS-->
 
   <!-- BEGIN: Page Vendor JS-->
-  <script src="../app-assets/vendors/js/ui/jquery.sticky.js"></script>
-  <script src="../app-assets/vendors/js/extensions/jstree.min.js"></script>
+  <script src="/app-assets/vendors/js/ui/jquery.sticky.js"></script>
+  <script src="/app-assets/vendors/js/extensions/jstree.min.js"></script>
   <!-- END: Page Vendor JS-->
 
   <!-- BEGIN: Theme JS-->
-  <script src="../app-assets/js/core/app-menu.min.js"></script>
-  <script src="../app-assets/js/core/app.min.js"></script>
-  <script src="../app-assets/js/scripts/customizer.min.js"></script>
+  <script src="/app-assets/js/core/app-menu.min.js"></script>
+  <script src="/app-assets/js/core/app.min.js"></script>
+  <script src="/app-assets/js/scripts/customizer.min.js"></script>
   <!-- END: Theme JS-->
 
   <!-- BEGIN: Page JS-->
-  <script src="../app-assets/js/scripts/pages/app-file-manager.min.js"></script>
+  <script src="/app-assets/js/scripts/pages/app-file-manager.min.js"></script>
   <!-- END: Page JS-->
 
   <script>
